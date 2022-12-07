@@ -1,0 +1,117 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-color);
+}
+
+.footer-container {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            
+        }
+
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    align-items: baseline;
+                }
+   
+}
+
+.footer-contact {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+    }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        }
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer-logo-accent {
+    color: var(--white-color);
+}
+
+.address {
+    font-style: normal;
+}
+
+.address-list__item {
+    margin-bottom: 9px;
+    &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.address-link {
+    line-height: 1.7;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: color var(--transition-time) var(--transition-cubic);
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.footer-mail {
+    line-height: 1.7;
+    color: var(--footer-contact-color);
+    text-decoration: none;
+    transition: color var(--transition-time) var(--transition-cubic);
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.footer-tel {
+    line-height: 1.7;
+    color: var(--footer-contact-color);
+    text-decoration: none;
+    transition: color var(--transition-time) var(--transition-cubic);
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.footer-social {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
+    
+}
+
+.footer-social__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+}
+
+.footer-icon {
+    color: var(--white-color);
+}

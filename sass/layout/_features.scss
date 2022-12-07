@@ -1,0 +1,33 @@
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.features-list__item{
+    width: 270px;
+}
+
+.features__iconBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-btn-portpholio);
+}
+
+
+
+.features-list__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.features-list__descr {
+    line-height: 1.7;
+}
