@@ -5,19 +5,32 @@
 .team-title {
     margin-bottom: 50px;
 
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     color: var(--title-color);
     text-align: center;
+
+    @media screen and (min-widht: 1200px) {
+        font-size: 36px;
+    }
 }
 
 .team-list {
-    display: flex;
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
 }
 
 .team-list__item {
-    width: calc((100% - 120px) / 4);
+    // width: calc((100% - 120px) / 4);
     text-align: center;
     /* border-bottom: 1px solid #000; */
 
@@ -25,6 +38,14 @@
     border-bottom-right-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-color: var(--white-color);
+
+    @media screen and (min-width: 768px) {
+            max-width: calc((100% - 30px) / 2);
+        }
+
+                @media screen and (min-width: 1200px) {
+                    max-width: calc((100% - 120px) / 4);
+                }
 }
 
 
@@ -42,7 +63,6 @@
 }
 
 .team-list__jobTitle {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 16px;
 }
-

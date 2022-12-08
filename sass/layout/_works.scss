@@ -1,5 +1,11 @@
 .works {
-    padding-bottom: 94px;
+    // display: none;
+    @media screen and (max-width:1199px) {
+        display: none;
+        padding-bottom: 94px;
+    }
+
+   
 }
 
 .works-title {
