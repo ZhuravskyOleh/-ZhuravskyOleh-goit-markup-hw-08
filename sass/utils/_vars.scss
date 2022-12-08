@@ -15,5 +15,6 @@
     --social-link-icon-color: #AFB1B8;
     --icon-bg-color: rgba(255, 255, 255, 0.1);
     --transition-time: 250ms;
-    --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1)
+    --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    --gradient: linear-gradient(var(--hero-bg-gradient), var(--hero-bg-gradient));
 }

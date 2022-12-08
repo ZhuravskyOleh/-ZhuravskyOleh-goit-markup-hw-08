@@ -15,7 +15,8 @@
   --social-link-icon-color: #AFB1B8;
   --icon-bg-color: rgba(255, 255, 255, 0.1);
   --transition-time: 250ms;
-  --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1) ;
+  --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --gradient: linear-gradient(var(--hero-bg-gradient), var(--hero-bg-gradient));
 }
 
 .visually-hidden {
@@ -279,9 +280,8 @@ img {
 
 .hero {
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-bg-gradient)), to(var(--hero-bg-gradient))), url(../image/hero-bg-desc.jpg);
-  background-image: linear-gradient(var(--hero-bg-gradient), var(--hero-bg-gradient)), url(../image/hero-bg-desc.jpg);
-  max-width: 1600px;
+  background-image: var(--gradient), url(../image/hero-bg-mob.jpg);
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -289,15 +289,59 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url(../image/hero-bg-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: var(--gradient), url(../image/hero-bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url(../image/hero-bg-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--gradient), url(../image/hero-bg-desc.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url(../image/hero-bg-desc-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
-  width: 360px;
   margin: 0 auto 30px auto;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 900;
+  width: 250px;
   line-height: 1.61;
   color: var(--white-color);
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 .features-list {
