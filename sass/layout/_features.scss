@@ -8,14 +8,20 @@
 .features-list__item{
     width: 100%;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: calc((100% - 30px) / 2);
     }
-
-         @media screen and (min-width: 1200px)
-         {
-            width: calc((100% - 120px) / 4);
-         }
+    // @media screen and (min-width: 768px) {
+    //     width: calc((100% - 30px) / 2);
+    // }
+    
+    @include desktop {
+        width: calc((100% - 120px) / 4);
+    }
+        //  @media screen and (min-width: 1200px)
+        //  {
+        //     width: calc((100% - 120px) / 4);
+        //  }
 }
 
 .features__iconBox {

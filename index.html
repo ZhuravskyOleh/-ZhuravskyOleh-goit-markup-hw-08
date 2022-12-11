@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Шапка сайту-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__wrap">
         <a href="./index.html" class="logo">
           Web<span class="header__logo--accent">Studio</span></a
@@ -58,8 +58,64 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="mob-btn" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./image/icon.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <!-- mob menu -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="mob-menu__btn" type="button" data-menu-close>
+          <svg width="40" height="40">
+            <use href="./image/icon.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+        <div>
+          <nav class="nav">
+            <ul class="menu-list list">
+              <li class="menu-list__item ">
+                <a href="./index.html" class="menu__link menu__link--current" >Студія</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="./Portpholios.html" class="menu__link">Портфоліо</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <ul class="menu-contact-list list">
+            <li class="menu-contact__item">
+              <a href="tel:+380961111111" class="menu-contact__phone">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="menu-contact__item">
+              <a href="mailto:nfo@devstudio.com" class="menu-contact__mail">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-social list">
+            <li class="menu-social__item">
+              <a href="#" class="menu-social__link">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="#" class="menu-social__link">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="#" class="menu-social__link">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="#" class="menu-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!--Ефективні рішення-->
       <section class="hero">
@@ -338,42 +394,42 @@
           <h2 class="partners-title">Постійні клієнти</h2>
           <ul class="partners-list list">
             <li class="partners-list__item">
-              <a href="" class="partners-list__link ">
+              <a href="" class="partners-list__link">
                 <svg class="partners-list__icon">
                   <use href="./image/icon.svg#icon-ya-co"></use>
                 </svg>
               </a>
             </li>
             <li class="partners-list__item">
-              <a href="" class="partners-list__link ">
+              <a href="" class="partners-list__link">
                 <svg class="partners-list__icon">
                   <use href="./image/icon.svg#icon-tagline-here"></use>
                 </svg>
               </a>
             </li>
             <li class="partners-list__item">
-              <a href="" class="partners-list__link ">
+              <a href="" class="partners-list__link">
                 <svg class="partners-list__icon">
                   <use href="./image/icon.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
             <li class="partners-list__item">
-              <a href="" class="partners-list__link ">
+              <a href="" class="partners-list__link">
                 <svg class="partners-list__icon">
                   <use href="./image/icon.svg#icon-foster"></use>
                 </svg>
               </a>
             </li>
             <li class="partners-list__item">
-              <a href="" class="partners-list__link ">
+              <a href="" class="partners-list__link">
                 <svg class="partners-list__icon">
                   <use href="./image/icon.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
             <li class="partners-list__item">
-              <a href="" class="partners-list__link ">
+              <a href="" class="partners-list__link">
                 <svg class="partners-list__icon">
                   <use href="./image/icon.svg#icon-tag-line"></use>
                 </svg>
@@ -470,7 +526,7 @@
       </div>
     </footer>
     <!-- modal -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h1 class="modal-title">Залиште свої дані, ми вам передзвонимо</h1>
         <form class="">
@@ -559,7 +615,8 @@
           </svg>
         </button>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
