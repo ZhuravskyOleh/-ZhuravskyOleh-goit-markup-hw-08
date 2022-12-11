@@ -1,5 +1,7 @@
 .modal-title {
-    margin-bottom: 12px;
+    width: 370px;
+    margin: 0 auto 12px auto;
+    // margin-bottom: 12px;
 
     font-weight: 700;
     font-size: 20px;
@@ -7,6 +9,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+
+    @include desktop {
+        width: 100%;
+    }
 }
 
 .form-wrap {

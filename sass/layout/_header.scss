@@ -221,6 +221,12 @@
 
     border: none;
     background-color: transparent;
+    transition: fill var(--transition-time) var(--transition-cubic);
+
+    &:hover, 
+        &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 // .menu-list {
@@ -274,6 +280,9 @@
 }
 
 .menu-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
     
     margin-top: 64px;
 
@@ -282,6 +291,21 @@
             gap: 20px;
     }
 }
+
+.menu-social__item {
+    position: relative;
+     &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -10px;
+        display: block;
+        width: 1px;
+        height: 22px;
+        background-color: rgba(33, 33, 33, 0.2);
+    }
+}
+
 
 .menu-social__link {
     font-size: 18px;
